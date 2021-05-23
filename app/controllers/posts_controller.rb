@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.order(created_at: :desc).page(params[:page]).per(PER_PAGE)
+    @post = Post.new
   end
 
   def create

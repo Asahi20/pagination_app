@@ -1,4 +1,4 @@
-<%= form_with model: Post.new, local: true do |form| %>
+<%= form_with model: @post, local: true do |form| %>
   <div>
     <%= form.label :body, "投稿" %>
     <%= form.text_field :body, required: true %>
